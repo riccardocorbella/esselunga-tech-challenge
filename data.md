@@ -16,10 +16,10 @@
 - identify weekly stores sales trends
 ---
 ## High level<br/> architecture
-![Architecture](/images/esselunga_tech_architettura.png)
+![Architecture](images/esselunga_tech_architettura.png)
 ---
 ### Data analytics layer
-![Analitycs layer](/images/architettura_anal.svg)
+![Analitycs layer](images/architettura_anal.svg)
 --
 - _Kafka connect_ loads data on __low cost__ GCS (object storage) using different paritioning strategy
   - data is stored in JSON files with schema
@@ -28,13 +28,13 @@
   - data is modeled using a star schema, effective for many types of analysis and widely used by BI analysts
 ---
 ### Real-time insights layer
-![Real-time layer](/images/architettura_real.svg)
+![Real-time layer](images/architettura_real.svg)
 --
 - _telegraf_ writes sales data on _influxDB_, capable of handling __high write loads__ and keeping KPIs up to date
 - KPIs are exposed on custom dashboard built on top of _Grafana_
 ---
 ## Next steps
-![Extra layer](/images/architettura_extra.svg)
+![Extra layer](images/architettura_extra.svg)
 --
 - KPIs are exposed trough RESTful APIs to other IT entities (e.g. mobile app, web sites, ...)
 - _K8S_ (GKE or Cloud Run as fully managed services) provides the perferct environment to build __etherogeneous microservices__ and due to its __high versatility__ can be used to fullfill new requirements
