@@ -16,7 +16,7 @@
 - identify weekly stores sales trends
 ---
 ## High level<br/> architecture
-![Architecture](images/esselunga_tech_architettura.png)
+![Architecture](images/esselunga_tech_architettura.svg)
 ---
 ### Data analytics layer
 ![Analitycs layer](images/architettura_anal.svg)
