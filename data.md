@@ -39,4 +39,4 @@
 - KPIs are exposed trough RESTful APIs to other IT entities (e.g. mobile app, web sites, ...)
 - _K8S_ (GKE or Cloud Run as fully managed services) provides the perferct environment to build __etherogeneous microservices__ and due to its __high versatility__ can be used to fullfill new requirements
 ---
-# Thanks you!
+# See you soon!
